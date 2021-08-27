@@ -12,7 +12,7 @@ Ansible playbook for installing local development tools
 
 ## Run
 
-Install all tools
+Install all tools and create aliases
 
 `ansible-playbook -K -i inventory playbook.yml`
 
