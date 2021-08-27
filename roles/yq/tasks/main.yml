@@ -1,0 +1,5 @@
+---
+- name: install
+  community.general.homebrew:
+    name: yq
+    state: latest

@@ -1,0 +1,5 @@
+---
+- name: create workspace folder
+  command: mkdir "{{workspace_dir}}"
+  args:
+    creates: "{{workspace_dir}}"
