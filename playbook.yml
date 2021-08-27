@@ -1,9 +1,19 @@
 ---
 - hosts: local
   roles:
+    - direnv
+    - go
     - helm
+    - helm-docs
     - jq
+    - k9s
+    - kafkacat
     - kind
     - kubectx
-    - yq
+    - kubeval
+    - node
+    - protobuf
+    - rust
     - workspace
+    - yarn
+    - yq
