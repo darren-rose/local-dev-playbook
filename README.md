@@ -12,4 +12,10 @@ Ansible playbook for installing local development tools
 
 ## Run
 
+Install all tools
+
 `ansible-playbook -K -i inventory playbook.yml`
+
+Install kubernetes tools only
+
+`ansible-playbook -K -i inventory playbook.yml --tags kubernetes`

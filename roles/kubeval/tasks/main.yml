@@ -3,3 +3,4 @@
   community.general.homebrew:
     name: kubeval
     state: latest
+  tags: kubernetes
