@@ -1,0 +1,12 @@
+- name: brewup
+  ansible.builtin.lineinfile:
+    path: ~/.local-dev-playbook-aliases
+    line: alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
+    create: yes
+  tags: aliases
+
+- name: foo
+  ansible.builtin.lineinfile:
+    path: ~/.local-dev-playbook-aliases
+    line: alias foo='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
+  tags: aliases
