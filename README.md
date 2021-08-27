@@ -19,3 +19,7 @@ Install all tools
 Install kubernetes tools only
 
 `ansible-playbook -K -i inventory playbook.yml --tags kubernetes`
+
+Create aliases only
+
+`ansible-playbook -K -i inventory playbook.yml --tags aliases`
