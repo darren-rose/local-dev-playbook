@@ -4,5 +4,6 @@
     - helm
     - jq
     - kind
+    - kubectx
     - yq
     - workspace
