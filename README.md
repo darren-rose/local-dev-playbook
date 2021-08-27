@@ -12,6 +12,4 @@ Ansible playbook for installing local development tools
 
 ## Run
 
-```
-ansible-playbook -K -i inventory playbook.yml
-```
+`ansible-playbook -K -i inventory playbook.yml`
