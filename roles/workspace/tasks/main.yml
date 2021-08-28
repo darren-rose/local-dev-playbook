@@ -1,5 +1,6 @@
 ---
-- name: create workspace folder
-  command: mkdir "{{lookup('env', '{{ workspace_dir_env_var }}') | default('{{ workspace_default_dir }}', True) }}"
-  args:
-    creates: "{{lookup('env', '{{ workspace_dir_env_var }}') | default('{{ workspace_default_dir', True) }}"
+- name: create folder
+  file: 
+    path: "{{ lookup('env', '{{ workspace_dir_env_var }}') | default('{{ workspace_default_dir }}', True) }}"
+    state: directory
+    mode: '0755'
