@@ -1,0 +1,17 @@
+name: lint
+on: [push, pull_request]
+jobs:
+  ansible-lint:
+    name: runner / ansible-lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v2
+
+      # Minimal example
+      - name: ansible-lint
+        uses: barolab/action-ansible-lint@master
+        with:
+          github_token: ${{ secrets.github_token }}
+          targets: ./**/*.yml
