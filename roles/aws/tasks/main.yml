@@ -1,0 +1,15 @@
+---
+- name: install
+  community.general.homebrew:
+    name: awscli
+    state: latest
+
+- name: version
+  ansible.builtin.command: aws --version
+  register: version 
+
+- name: version information
+  ansible.builtin.debug:
+    msg: 
+      - "{{ version.stdout }}"
+  when: version.stdout is defined      

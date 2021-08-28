@@ -4,6 +4,9 @@
     - role: aliases
       tags: 
         - aliases
+    - role: aws
+      tags: 
+        - aws
     - role: direnv
       tags: 
         - direnv
