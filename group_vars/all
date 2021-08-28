@@ -1,1 +1,2 @@
-workspace_dir: '~/Workspace-MyCo'
+workspace_dir: ~/Workspace-MyCo
+aliases_file: ~/.local-dev-playbook-aliases
