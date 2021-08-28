@@ -3,6 +3,7 @@
     path: "{{ aliases_file }}"
     line: alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
     create: yes
+    mode: '0755'
 
 - name: awsenv
   ansible.builtin.lineinfile:

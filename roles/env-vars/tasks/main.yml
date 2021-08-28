@@ -1,8 +1,9 @@
 - name: create environment variables file
   ansible.builtin.lineinfile:
     path: "{{ environment_variables_file }}"
-    line: export {{ workspace_dir_env_var }}={{lookup('env', '{{ workspace_dir_env_var }}') | default('{{ workspace_default_dir }}', True) }}
+    line: export {{ workspace_dir_env_var }}={{ lookup('env', '{{ workspace_dir_env_var }}') | default('{{ workspace_default_dir }}', True) }}
     create: yes
+    mode: '0755'
 
 - name: usage information
   ansible.builtin.debug:

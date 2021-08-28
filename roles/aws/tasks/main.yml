@@ -12,7 +12,8 @@
 - name: version
   ansible.builtin.command: aws --version
   register: version 
-
+  changed_when: False
+  
 - name: version information
   ansible.builtin.debug:
     msg: 
