@@ -10,3 +10,8 @@
     path: ~/.local-dev-playbook-aliases
     line: alias foo='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
   tags: aliases
+
+- name: usage information
+  ansible.builtin.debug:
+    msg: 
+      - "source ~/.local-dev-playbook-aliases"

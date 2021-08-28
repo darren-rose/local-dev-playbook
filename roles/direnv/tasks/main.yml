@@ -8,7 +8,7 @@
   ansible.builtin.command: direnv version
   register: version 
 
-- name: Print return information from the previous task
+- name: version information
   ansible.builtin.debug:
     msg: 
       - "{{ version.stdout }}"
