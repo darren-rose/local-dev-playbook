@@ -3,5 +3,4 @@
   community.general.homebrew:
     name: helm
     state: latest
-  tags: kubernetes
 

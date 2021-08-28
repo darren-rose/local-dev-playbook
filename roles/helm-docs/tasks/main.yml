@@ -3,4 +3,3 @@
   community.general.homebrew:
     name: helm-docs
     state: latest
-  tags: kubernetes

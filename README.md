@@ -12,14 +12,20 @@ Ansible playbook for installing local development tools
 
 ## Run
 
-Install all tools and create aliases
+For dry run suffix any of the following with `--check`
+
+### Install all
 
 `ansible-playbook -K -i inventory playbook.yml`
 
-Install kubernetes tools only
+### Install aliases only
+
+`ansible-playbook -K -i inventory playbook.yml --tags aliases`
+
+### Install all kubernetes tools
 
 `ansible-playbook -K -i inventory playbook.yml --tags kubernetes`
 
-Create aliases only
+### Install helm only
 
-`ansible-playbook -K -i inventory playbook.yml --tags aliases`
+`ansible-playbook -K -i inventory playbook.yml --tags helm`

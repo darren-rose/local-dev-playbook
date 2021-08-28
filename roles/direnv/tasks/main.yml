@@ -3,3 +3,13 @@
   community.general.homebrew:
     name: direnv
     state: latest
+
+- name: version
+  ansible.builtin.command: direnv version
+  register: version 
+
+- name: Print return information from the previous task
+  ansible.builtin.debug:
+    msg: 
+      - "{{ version.stdout }}"
+  when: version.stdout is defined      

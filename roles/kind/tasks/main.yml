@@ -3,4 +3,3 @@
   community.general.homebrew:
     name: kind
     state: latest
-  tags: kubernetes

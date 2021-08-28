@@ -1,20 +1,58 @@
 ---
 - hosts: local
   roles:
-    - aliases
-    - direnv
-    - go
-    - helm
-    - helm-docs
-    - jq
-    - k9s
-    - kafkacat
-    - kind
-    - kubectx
-    - kubeval
-    - node
-    - protobuf
-    - rust
-    - workspace
-    - yarn
-    - yq
+    - role: aliases
+      tags: 
+        - aliases
+    - role: direnv
+      tags: 
+        - direnv
+    - role: go
+      tags: 
+        - go
+    - role: helm
+      tags: 
+        - helm
+        - kubernetes
+    - role: helm-docs
+      tags: 
+        - helm-docs
+        - kubernetes
+    - role: jq
+      tags: 
+        - jq
+    - role: k9s
+      tags: 
+        - k9s
+        - kubernetes
+    - role: kafkacat
+    - role: kind
+      tags: 
+        - kind
+        - kubernetes
+    - role: kubectx
+      tags: 
+        - kubectx
+        - kubernetes
+    - role: kubeval
+      tags: 
+        - kubeval
+        - kubernetes
+    - role: node
+      tags: 
+        - node
+    - role: protobuf
+      tags: 
+        - protobuf
+    - role: rust
+      tags: 
+        - rust
+    - role: workspace
+      tags: 
+        - workspace
+    - role: yarn
+      tags: 
+        - yarn
+    - role: yq
+      tags: 
+        - yq

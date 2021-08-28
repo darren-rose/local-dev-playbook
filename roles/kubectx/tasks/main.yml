@@ -3,4 +3,3 @@
   community.general.homebrew:
     name: kubectx
     state: latest
-  tags: kubernetes
