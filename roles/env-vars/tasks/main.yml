@@ -1,0 +1,10 @@
+- name: create environment variables file
+  ansible.builtin.lineinfile:
+    path: "{{ environment_variables_file }}"
+    line: export {{ workspace_dir_env_var }}={{ workspace_dir }}
+    create: yes
+
+- name: usage information
+  ansible.builtin.debug:
+    msg: 
+      - "source {{ environment_variables_file }}"

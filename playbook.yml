@@ -7,6 +7,9 @@
     - role: direnv
       tags: 
         - direnv
+    - role: env-vars
+      tags: 
+        - env-vars
     - role: go
       tags: 
         - go

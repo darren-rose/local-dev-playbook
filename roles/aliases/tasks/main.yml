@@ -3,13 +3,11 @@
     path: "{{ aliases_file }}"
     line: alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
     create: yes
-  tags: aliases
 
 - name: foo
   ansible.builtin.lineinfile:
     path: "{{ aliases_file }}"
     line: alias foo='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
-  tags: aliases
 
 - name: usage information
   ansible.builtin.debug:

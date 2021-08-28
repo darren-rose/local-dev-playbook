@@ -1,2 +1,4 @@
-workspace_dir: ~/Workspace-MyCo
 aliases_file: ~/.local-dev-playbook-aliases
+environment_variables_file: ~/.local-dev-playbook-env-vars
+workspace_dir: ~/Workspace-Local-Dev-Playbook
+workspace_dir_env_var: LOCAL_DEV_PLAYBOOK_WORKSPACE
