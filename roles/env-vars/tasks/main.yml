@@ -1,7 +1,7 @@
 - name: create environment variables file
   ansible.builtin.lineinfile:
     path: "{{ environment_variables_file }}"
-    line: export {{ workspace_dir_env_var }}={{ workspace_dir }}
+    line: export {{ workspace_dir_env_var }}={{lookup('env', '{{ workspace_dir_env_var }}') | default('{{ workspace_default_dir }}', True) }}
     create: yes
 
 - name: usage information
