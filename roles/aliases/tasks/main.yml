@@ -4,10 +4,20 @@
     line: alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
     create: yes
 
-- name: foo
+- name: awsenv
   ansible.builtin.lineinfile:
     path: "{{ aliases_file }}"
-    line: alias foo='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
+    line: alias awsenv='env | grep AWS'
+
+- name: awsid
+  ansible.builtin.lineinfile:
+    path: "{{ aliases_file }}"
+    line: alias awsid='aws sts get-caller-identity | jq'
+
+- name: eks-clusters
+  ansible.builtin.lineinfile:
+    path: "{{ aliases_file }}"
+    line: alias eks-clusters='aws eks list-clusters | jq'
 
 - name: usage information
   ansible.builtin.debug:
